@@ -8,3 +8,16 @@ git push -u origin main  -->
 
 to delete git from your folder use: rm -rf .git
 to clear all the commands : clear
+Repo name: FS_RP_01_<name>
+
+if you want to push to an exisitng repo:
+
+git init
+git remote add link
+git branch -M main
+git add .
+git commit -m ""
+git fetch origin 
+git merge origin/main (when you are in main branch)
+git merge origin/main --allow-unrelated-histories
+git push -u origin main 
