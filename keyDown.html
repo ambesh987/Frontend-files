@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Event</title>
+    <style>
+        #display{
+            font-size: 16px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="inputfield" placeholder="Type Something...">
+    <div id="display"> Key count: 0</div>
+
+    <script>
+        var inputField = document.getElementById('inputfield');
+        var display= document.getElementById('display');
+        var count=0;
+
+        inputField.addEventListener('keyup', function(){
+           count++;
+
+
+            display.textContent= 'key count: '+count;
+        })
+    </script>
+</body>
+</html>

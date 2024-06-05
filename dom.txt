@@ -1,0 +1,14 @@
+var element = document.getElementById('myElement'); -- single element by its ID 
+var elements = document.getElementByClassName('myClass')  - selects all elements with a specific myClass
+var elements = document.getElementByTagName('div')
+var element = document.querySelector('.myclass') 
+
+var element = document.querySelectorAll('.myclass') 
+
+div.rose
+div.rose
+div.rose
+
+
+element.textContent = 'new content'
+element.innerHTML= '<p></p>'

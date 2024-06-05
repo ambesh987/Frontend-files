@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+</head>
+<body>
+    <h1>Temeprature convertor</h1>
+
+    <label for="celsius">Enter Celsius Temperature: </label>
+    <input type="number" id="celsius" placeholder="Celsius">
+    <button onclick="convert()">Convert to Fahrenheit</button>
+    <p id="result"></p>
+    
+    <script>
+        function convert(){
+            var celsius = document.getElementById("celsius").value;
+            var fahr = (celsius * 9/5)+32;
+            document.getElementById("result").innerHTML=fahr;
+
+        }
+    </script>
+</body>
+</html>
+<!-- 
+celsius to Fahrenheit
+
+fahrenheit = (celsius * 9/5 ) +32 -->

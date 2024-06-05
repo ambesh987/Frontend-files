@@ -1,0 +1,63 @@
+<!-- events: action detected by the browser, eg: click, mouseover, keypress
+event listener: function that wait for specific event to be occured
+event handler: function that handles the event -->
+
+<!-- event listener
+element.addEventListener('event',function) -->
+
+<!-- events:
+
+click
+mouseover
+mouseout
+keydown 
+keyup
+submit  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        .highlight{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 id="title" >Hello, world!</h2>
+    <button id="changetext">Change Text</button>
+    <button id="togglehighlight" type="submit">Toggle Highlight</button>
+
+
+    <script>
+        var title = document.getElementById('title');
+        var changeTextButton= document.getElementById('changetext');
+        var toggleHighlightButton = document.getElementById('togglehighlight');
+
+        changeTextButton.addEventListener('click', function(){
+            title.textContent='Text Changed!';
+        });
+
+        toggleHighlightButton.addEventListener('click',function(){
+            title.classList.toggle('highlight');
+        });
+
+        button.addEventListener('click',function(event){
+        console.log(event.type) //click
+        })
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+        })
+
+    </script>
+</body>
+</html>
+
+<!-- Advanced Event Handling
+
+-->
